@@ -7,7 +7,7 @@ function Updatetask(props) {
         if(task.trim() === '' || props.task.todo === task){
             props.removePopup()
         } else {
-            axios.put(`http://localhost:8000/api/tasks/${props.task._id}`,{
+            axios.put(`https://server-todo-6fx4.onrender.com/${props.task._id}`,{
                 _id : props.task._id,
                 todo : task,
                 isComplete : props.task.isComplete
