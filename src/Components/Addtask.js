@@ -7,7 +7,7 @@ function Addtask(props) {
         if(task.trim() === ''){
             return 
         } else {
-            axios.post('https://server-todo-6fx4.onrender.com' , {
+            axios.post('https://server-todo-6fx4.onrender.com/api/tasks' , {
                 todo : task,
                 isComplete : false
             }).then(res => {
